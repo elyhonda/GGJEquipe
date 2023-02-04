@@ -5,7 +5,7 @@ using System;
 public class ObstaculoMovimento1 : MonoBehaviour
 {
     float x,y;
-    float velocidadeObjeto;
+    float velocidadeObjeto = -0.07f;
     int inimigo;
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,7 @@ public class ObstaculoMovimento1 : MonoBehaviour
     void Update()
     {
         
-        x = -0.01f;;
+        x = velocidadeObjeto;
         transform.Translate(new Vector2(x,y));
-    }
-
-    private void OnBecameInvisible(){
-        Destroy(this.gameObject);
     }
 }

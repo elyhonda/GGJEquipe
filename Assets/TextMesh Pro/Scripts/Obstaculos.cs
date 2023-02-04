@@ -6,6 +6,11 @@ public class Obstaculos : MonoBehaviour
 {
     public float tempo;
     public GameObject prefab;
+    public GameObject prefab1;
+    public GameObject prefab2;
+    private GameObject prefabSelecionado;
+    public float y;
+    int blocoAleatorio;
     void Start()
     {
         StartCoroutine("SpawObstaculo");
@@ -21,9 +26,28 @@ public class Obstaculos : MonoBehaviour
     }
 
     IEnumerator SpawObstaculo(){
+        blocoAleatorio = UnityEngine.Random.Range(0,3);
+        if (blocoAleatorio == 0 ){
+            prefabSelecionado = prefab;
+            blocoAleatorio = 8;
+        }
+        else if (blocoAleatorio == 1){
+            prefabSelecionado = prefab1;
+            blocoAleatorio = 4;
+        }else{
+            prefabSelecionado = prefab2;
+        }
+
+        
+        
         yield return new WaitForSeconds(tempo);
-        GameObject objetoObstaculoTemp = Instantiate(prefab);
+        //Debug.Log(blocoAleatorio);
+        GameObject objetoObstaculoTemp = Instantiate(prefabSelecionado);
+        objetoObstaculoTemp.transform. position = new Vector2(16f+(float)blocoAleatorio,y);
         StartCoroutine("SpawObstaculo");
     }
 
+    private void OnBecameInvisible(){
+        Destroy(this.gameObject);
+    }
 }

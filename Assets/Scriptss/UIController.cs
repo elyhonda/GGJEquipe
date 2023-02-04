@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int distance = Mathf.FloorToInt(player.distance);
-        distanceText.text = distance + " m";
+        /*int distance = Mathf.FloorToInt(player.distance);
+        distanceText.text = distance + " m";*/
     }
 }

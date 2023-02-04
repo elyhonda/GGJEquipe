@@ -1,125 +1,93 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+ 
 public class PlayerController : MonoBehaviour
 {
-    public float gravity;
-    public float acceleration = 10;
-    public float distance = 0;
-    public float maxAcceleration = 10;
-    public float maxXVelocity = 100;
-    public float groundHeight = 10;
-    public float jumpVelocity = 20;
-    public float maxHoldJumpTime = 0.4f;
-    public float holdJumpTimer = 0.0f;
-    public float jumpGroundThreshold = 3;
-    
+    Rigidbody2D rb;
+ 
+    public float jumpForce;
     public Vector2 velocity;
-
-    public bool isGrounded;
-    public bool isHoldingJump = false;
-
-
-
+    public float distance;
+    public float maxXVelocity = 100f;
+    public float maxAcceleration = 10f;
+    public float acceleration = 10f;
+ 
+    private bool isGrounded;
+    public Transform feetPos;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+ 
+    public float jumpStartTime;
+    private float jumpTime;
+    private bool isJumping;
+ 
+ 
+ 
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
-        Vector2 pos = transform.position;
-        float groundDistance = Mathf.Abs(pos.y - groundHeight);
-
-        if(isGrounded || groundDistance <= jumpGroundThreshold)
-        {
-            if(Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                isGrounded = false;
-                velocity.y = jumpVelocity;
-                isHoldingJump = true;
-                holdJumpTimer = 0;
-            }
-
-            
-        }
-        if(Input.GetKeyUp(KeyCode.UpArrow))
-            {
-                isHoldingJump = false;
-            }   
+        Jump();
     }
-
+ 
     void FixedUpdate()
     {
-        Vector2 pos = transform.position;
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
-        if(!isGrounded)
-        {
-            if(isHoldingJump)
-            {
-                holdJumpTimer += Time.fixedDeltaTime;
-                if(holdJumpTimer >= maxHoldJumpTime)
-                {
-                    isHoldingJump = false;
-                }
-            }
-
-            pos.y += velocity.y * Time.fixedDeltaTime;
-            if(!isHoldingJump)
-            {
-                velocity.y += gravity * Time.fixedDeltaTime;
-            }
-            
-            Vector2 rayOrigin = new Vector2(pos.x + 0.7f, pos.y);
-            Vector2 rayDirection = Vector2.up;
-            float rayDistance = velocity.y * Time.fixedDeltaTime;
-            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance);
-            if(hit2D.collider != null)
-            {
-                Ground ground = hit2D.collider.GetComponent<Ground>();
-                if(ground != null)
-                {
-                    pos.y = groundHeight;
-                    isGrounded = true;
-                }
-               
-            }
-            Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.blue);
-        }
-        
         distance += velocity.x * Time.fixedDeltaTime;
-
+        
         if(isGrounded)
         {
-            
-            float velocityRatio = velocity.x / maxXVelocity;
-            acceleration = maxAcceleration * (1 - velocityRatio);
 
-            velocity.x += acceleration * Time.fixedDeltaTime;
+            float velocityRatio = velocity.x / maxXVelocity;
+            velocity.x += acceleration * Time.deltaTime;
+            acceleration = maxAcceleration * (1 - velocityRatio);
             if(velocity.x >= maxXVelocity)
             {
-                velocity.x = maxXVelocity;
+            velocity.x = maxXVelocity;
             }
-
-
-            Vector2 rayOrigin = new Vector2(pos.x - 0.7f, pos.y);
-            Vector2 rayDirection = Vector2.up;
-            float rayDistance = velocity.y * Time.deltaTime;
-            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance);
-            if(hit2D.collider == null)
-            {
-                isGrounded = false;
-               
-            }
-            Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.green);
         }
-        
+    }
+ 
+    void Jump()
+    {
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+    
 
-        transform.position = pos;
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.W))
+        {
+            isJumping = true;
+            jumpTime = jumpStartTime;
+            rb.velocity = Vector2.up * jumpForce;
+        }
+ 
+        if (Input.GetKey(KeyCode.W) && isJumping == true)
+        {
+            if (jumpTime > 0)
+            {
+                rb.velocity = Vector2.up * jumpForce;
+                jumpTime -= Time.deltaTime;
+            }
+            else
+            {
+                isJumping = false;
+            }
+        }
+ 
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            isJumping = false;
+        }
+    }
 
-
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(feetPos.position, checkRadius);
     }
 }
