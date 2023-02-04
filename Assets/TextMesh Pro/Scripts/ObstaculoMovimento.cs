@@ -17,7 +17,7 @@ public class ObstaculoMovimento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = -0.15f;;
+        x = -0.01f;;
         transform.Translate(new Vector2(x,y));
     }
 

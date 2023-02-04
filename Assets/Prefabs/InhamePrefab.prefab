@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8197818275251876722}
   - component: {fileID: 6772252802586448693}
+  - component: {fileID: 7858060317069075665}
   m_Layer: 0
   m_Name: InhamePrefab
   m_TagString: Untagged
@@ -164,3 +165,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7858060317069075665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6287456671099382591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b616011d3d1e124a8c8e8cc524a2916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
