@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
         if(isGrounded || groundDistance <= jumpGroundThreshold)
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if(Input.GetKeyDown(KeyCode.UpArrow))
             {
                 isGrounded = false;
                 velocity.y = jumpVelocity;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
             
         }
-        if(Input.GetKeyUp(KeyCode.Space))
+        if(Input.GetKeyUp(KeyCode.UpArrow))
             {
                 isHoldingJump = false;
             }   
@@ -73,12 +73,21 @@ public class PlayerController : MonoBehaviour
                 velocity.y += gravity * Time.fixedDeltaTime;
             }
             
-            
-            if(pos.y <= groundHeight)
-        {
-            pos.y = groundHeight;
-            isGrounded = true;
-        }
+            Vector2 rayOrigin = new Vector2(pos.x + 0.7f, pos.y);
+            Vector2 rayDirection = Vector2.up;
+            float rayDistance = velocity.y * Time.fixedDeltaTime;
+            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance);
+            if(hit2D.collider != null)
+            {
+                Ground ground = hit2D.collider.GetComponent<Ground>();
+                if(ground != null)
+                {
+                    pos.y = groundHeight;
+                    isGrounded = true;
+                }
+               
+            }
+            Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.blue);
         }
         
         distance += velocity.x * Time.fixedDeltaTime;
@@ -94,6 +103,18 @@ public class PlayerController : MonoBehaviour
             {
                 velocity.x = maxXVelocity;
             }
+
+
+            Vector2 rayOrigin = new Vector2(pos.x - 0.7f, pos.y);
+            Vector2 rayDirection = Vector2.up;
+            float rayDistance = velocity.y * Time.deltaTime;
+            RaycastHit2D hit2D = Physics2D.Raycast(rayOrigin, rayDirection, rayDistance);
+            if(hit2D.collider == null)
+            {
+                isGrounded = false;
+               
+            }
+            Debug.DrawRay(rayOrigin, rayDirection * rayDistance, Color.green);
         }
         
 
