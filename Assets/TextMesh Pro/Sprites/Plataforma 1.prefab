@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6349345763711656319}
   - component: {fileID: 2280405343930416424}
   - component: {fileID: 6306466891112698394}
+  - component: {fileID: 7889915495175209957}
   m_Layer: 0
   m_Name: Circle (2)
   m_TagString: Untagged
@@ -97,6 +98,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 3335026934703359863}
+  src: {fileID: 2390042813787481230}
+  clip: {fileID: 8300000, guid: 65e8f81eea71f7e43bfb8c1e788b26c5, type: 3}
+--- !u!58 &7889915495175209957
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3335026934703359863}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &4557652192079556700
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +128,8 @@ GameObject:
   - component: {fileID: 5807109813009746293}
   - component: {fileID: 3970693643088287291}
   - component: {fileID: 7078782797237312262}
+  - component: {fileID: 3481875446820777659}
+  - component: {fileID: 5112141586085894222}
   m_Layer: 0
   m_Name: Circle (3)
   m_TagString: Untagged
@@ -194,6 +216,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 4557652192079556700}
+  src: {fileID: 2390042813787481230}
+  clip: {fileID: 8300000, guid: 65e8f81eea71f7e43bfb8c1e788b26c5, type: 3}
+--- !u!58 &3481875446820777659
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4557652192079556700}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!58 &5112141586085894222
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4557652192079556700}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &6018436330192619178
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6018436330264329234}
   - component: {fileID: 328143300}
+  - component: {fileID: 2390042813787481230}
   m_Layer: 0
   m_Name: Plataforma 1
   m_TagString: Untagged
@@ -356,6 +414,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 10
+--- !u!82 &2390042813787481230
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6018436330264329233}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6018436331738562934
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +605,7 @@ GameObject:
   - component: {fileID: 3295308751409371083}
   - component: {fileID: 1518204178155594711}
   - component: {fileID: 2989338663069325707}
+  - component: {fileID: 7212513862667919591}
   m_Layer: 0
   m_Name: Circle (1)
   m_TagString: Untagged
@@ -537,6 +692,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 7618855093235170956}
+  src: {fileID: 2390042813787481230}
+  clip: {fileID: 8300000, guid: 65e8f81eea71f7e43bfb8c1e788b26c5, type: 3}
+--- !u!58 &7212513862667919591
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7618855093235170956}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &8552503110918362208
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +722,7 @@ GameObject:
   - component: {fileID: 6692264285991953741}
   - component: {fileID: 5158214782315716805}
   - component: {fileID: 4251447872015082641}
+  - component: {fileID: 5722154425660772459}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -634,3 +809,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObject: {fileID: 8552503110918362208}
+  src: {fileID: 2390042813787481230}
+  clip: {fileID: 8300000, guid: 65e8f81eea71f7e43bfb8c1e788b26c5, type: 3}
+--- !u!58 &5722154425660772459
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8552503110918362208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

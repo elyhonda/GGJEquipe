@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Moeda : MonoBehaviour
 {
+    public GameObject gameObject;
+    public AudioSource src;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +18,13 @@ public class Moeda : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-	    if(collision.gameObject.tag == "Jogador")
+	    if(collision.gameObject.tag == "Player")
         {
+            src.PlayOneShot(clip);
             Destroy(gameObject);
         }
+    }
+    void gameOver(){
+        
     }
 }

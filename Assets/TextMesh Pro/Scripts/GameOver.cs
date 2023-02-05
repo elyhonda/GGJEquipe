@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
+    public AudioSource src;
+    public AudioClip clip;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,17 @@ public class GameOver : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-	    if(collision.gameObject.tag == "Jogador")
+	    if(collision.gameObject.tag == "Player")
         {
-           //SceneManager.LoadScene("GameOver");
+            src.PlayOneShot(clip);
+            Invoke("gameOver",1f);
+            
         }
     }
+    void gameOver(){
+        SceneManager.LoadScene("GameOver");
+    }
 }
+
