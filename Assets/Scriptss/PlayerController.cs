@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
     private float jumpTime;
     private bool isJumping;
  
- 
+    public AudioSource src;
+    public AudioClip clip;
  
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded == true && Input.GetKeyDown(KeyCode.W))
         {
+            src.PlayOneShot(clip);
             isJumping = true;
             jumpTime = jumpStartTime;
             rb.velocity = Vector2.up * jumpForce;
@@ -91,7 +93,8 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
     }
-    
+
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Obstaculo")

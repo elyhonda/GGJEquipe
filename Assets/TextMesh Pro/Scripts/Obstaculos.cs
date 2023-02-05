@@ -29,11 +29,9 @@ public class Obstaculos : MonoBehaviour
         blocoAleatorio = UnityEngine.Random.Range(0,3);
         if (blocoAleatorio == 0 ){
             prefabSelecionado = prefab;
-            blocoAleatorio = 8;
         }
         else if (blocoAleatorio == 1){
             prefabSelecionado = prefab1;
-            blocoAleatorio = 4;
         }else{
             prefabSelecionado = prefab2;
         }
@@ -43,7 +41,7 @@ public class Obstaculos : MonoBehaviour
         yield return new WaitForSeconds(tempo);
         //Debug.Log(blocoAleatorio);
         GameObject objetoObstaculoTemp = Instantiate(prefabSelecionado);
-        objetoObstaculoTemp.transform. position = new Vector2(16f+(float)blocoAleatorio,y);
+        objetoObstaculoTemp.transform. position = new Vector2(16f,y);
         StartCoroutine("SpawObstaculo");
     }
 
