@@ -135,6 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7293018465975440403}
   - component: {fileID: 5231562792099688032}
+  - component: {fileID: -1584829892479864037}
   m_Layer: 0
   m_Name: Plataforma (1)
   m_TagString: Untagged
@@ -190,11 +191,107 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7293018465975440400}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 429caf8cd2073524e9fc62b1dac0bceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &-1584829892479864037
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293018465975440400}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8824983500160244457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,6 +1424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (11)
@@ -1353,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1395,6 +1496,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983500001672882}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4940732976740036895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338449327501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &6513444214683787458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1415,6 +1531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab
@@ -1441,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1503,6 +1623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (10)
@@ -1529,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1571,6 +1695,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983500354049765}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4118083338239523229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338633821658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &8726289788203180766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1730,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (3)
@@ -1617,7 +1760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1659,6 +1802,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983500655097561}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2404058947567256229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338263829990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &9182987036930424631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1767,6 +1925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (7)
@@ -1793,7 +1955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1848,6 +2010,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &3853295845605100661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338181919050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1001 &8824983501011263698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1855,6 +2032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (2)
@@ -1881,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1936,6 +2117,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &8793927072698333623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339594025965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1001 &8824983501089456824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1943,6 +2139,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (4)
@@ -1969,7 +2169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2024,6 +2224,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &867526515128225971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339503511943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1001 &8824983501230029891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2031,9 +2246,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
@@ -2057,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2099,6 +2322,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983501230029891}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2031603876823866353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339912402812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &3289050924758629384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2122,6 +2360,14 @@ PrefabInstance:
     - target: {fileID: 853922804140937458, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: counterVelocity
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476306772855101907, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135595595749964080, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_Name
@@ -2157,7 +2403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2223,6 +2469,14 @@ PrefabInstance:
       propertyPath: counterVelocity
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 3476306772855101907, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135595595749964080, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_Name
       value: BatataDocePrefab
@@ -2257,7 +2511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2319,6 +2573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (5)
@@ -2345,7 +2603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2387,6 +2645,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983501410293314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2422524642396990063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339723750781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &3924951457999094769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,6 +2680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (6)
@@ -2433,7 +2710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2475,6 +2752,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
   m_PrefabInstance: {fileID: 8824983501618219472}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2158170554748133738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338976322287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &2903983697616279787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2495,6 +2787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (1)
@@ -2521,7 +2817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2576,6 +2872,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &8892863237092921735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683338898845010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1001 &8824983501825430403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2583,6 +2894,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (8)
@@ -2609,7 +2924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2664,6 +2979,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &7806677172240165975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339316738236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!1001 &8824983501966787257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2671,6 +3001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (9)
@@ -2697,7 +3031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2752,3 +3086,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!114 &4018931673687641081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3258683339172751750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1da454d9da7cd4fb1e0c48ac3e1fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  src: {fileID: 0}
+  clip: {fileID: 0}

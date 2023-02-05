@@ -8,6 +8,8 @@ public class Obstaculos : MonoBehaviour
     public GameObject prefab;
     public GameObject prefab1;
     public GameObject prefab2;
+    public GameObject prefab3;
+    public GameObject prefab4;
     private GameObject prefabSelecionado;
     public float y;
     int blocoAleatorio;
@@ -32,8 +34,12 @@ public class Obstaculos : MonoBehaviour
         }
         else if (blocoAleatorio == 1){
             prefabSelecionado = prefab1;
-        }else{
+        }else if (blocoAleatorio == 2){
             prefabSelecionado = prefab2;
+        }else if(blocoAleatorio ==3){
+            prefabSelecionado = prefab3;
+        }else{
+            prefabSelecionado = prefab4;
         }
 
         
@@ -41,7 +47,7 @@ public class Obstaculos : MonoBehaviour
         yield return new WaitForSeconds(tempo);
         //Debug.Log(blocoAleatorio);
         GameObject objetoObstaculoTemp = Instantiate(prefabSelecionado);
-        objetoObstaculoTemp.transform. position = new Vector2(16f,y);
+        objetoObstaculoTemp.transform. position = new Vector2(1f,y);
         StartCoroutine("SpawObstaculo");
     }
 
