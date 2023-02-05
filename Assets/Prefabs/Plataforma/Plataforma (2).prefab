@@ -1385,6 +1385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6203768424922045751}
   - component: {fileID: 8913760011521845060}
+  - component: {fileID: -459010978488236488}
   m_Layer: 0
   m_Name: Plataforma (2)
   m_TagString: Untagged
@@ -1445,11 +1446,107 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6203768424922045748}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 429caf8cd2073524e9fc62b1dac0bceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &-459010978488236488
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203768424922045748}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &5553851519327057743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1457,6 +1554,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (5)
@@ -1483,7 +1584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1545,6 +1646,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (7)
@@ -1571,7 +1676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1637,6 +1742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1659,7 +1768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1721,6 +1830,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (2)
@@ -1747,7 +1860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1809,6 +1922,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab (3)
@@ -1835,7 +1952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1897,6 +2014,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (13)
@@ -1923,7 +2044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1985,6 +2106,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (9)
@@ -2011,7 +2136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2073,6 +2198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (8)
@@ -2099,7 +2228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2161,6 +2290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab (2)
@@ -2187,7 +2320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2249,6 +2382,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (10)
@@ -2275,7 +2412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2337,6 +2474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (4)
@@ -2363,7 +2504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2425,6 +2566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab
@@ -2451,7 +2596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2513,6 +2658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab (4)
@@ -2539,7 +2688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2605,6 +2754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2627,7 +2780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2689,6 +2842,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (6)
@@ -2715,7 +2872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2777,6 +2934,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (3)
@@ -2803,7 +2964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2865,6 +3026,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (11)
@@ -2891,7 +3056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2953,6 +3118,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (12)
@@ -2979,7 +3148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3041,6 +3210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_Name
       value: InhamePrefab (1)
@@ -3067,7 +3240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3129,6 +3302,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6203768424922045751}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (14)
@@ -3155,7 +3332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalRotation.w
