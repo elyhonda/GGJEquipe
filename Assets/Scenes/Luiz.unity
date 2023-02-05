@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -758,33 +758,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6864168749096798237, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1308300365}
-    - target: {fileID: 6864168749096798237, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_SortingOrder
-      value: 32767
-      objectReference: {fileID: 0}
     - target: {fileID: 6864168749096798238, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_LocalScale.z
+      propertyPath: m_SizeDelta.x
+      value: 398.3504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 392
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -93
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864168749669845511, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
+      propertyPath: m_HorizontalAlignment
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864168749669845510, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b0777d16f4e2a045b91165dc644852d, type: 3}
