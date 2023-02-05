@@ -6,7 +6,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour    
 {
     PlayerController player;
-
+    public float counterVelocity;
 
     private void Awake()
     {
@@ -26,7 +26,7 @@ public class Obstacle : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 pos = transform.position;
-        pos.x -= player.velocity.x * Time.fixedDeltaTime;
+        pos.x -= player.velocity.x * Time.fixedDeltaTime / counterVelocity;
 
         if (pos.x < -100)
         {

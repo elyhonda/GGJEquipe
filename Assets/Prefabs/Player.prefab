@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3230914605501729382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.86, y: 11.85, z: 0}
-  m_LocalScale: {x: 1.0425, y: 1.425, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6469491232294469237}
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 3230914605501729382}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5c9a1ed6a4f5f5a48ad365026bbfc233, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -132,12 +132,12 @@ MonoBehaviour:
   maxXVelocity: 100
   maxAcceleration: 10
   acceleration: 10
-  feetPos: {fileID: 0}
-  checkRadius: 1
+  feetPos: {fileID: 6469491232294469237}
+  checkRadius: 0.25
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  jumpStartTime: 0
+  jumpStartTime: 0.25
 --- !u!50 &8098522896829430587
 Rigidbody2D:
   serializedVersion: 4

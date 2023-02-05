@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        cenoura = GameObject.Find("Cenoura").GetComponent<EnemyController>();
+        cenoura = GameObject.Find("cenoura").GetComponent<EnemyController>();
     }
  
     // Update is called once per frame
