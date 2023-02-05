@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3230914605501729405}
   - component: {fileID: 3230914605501729400}
   - component: {fileID: 3230914605501729404}
-  - component: {fileID: 737153775876118738}
   - component: {fileID: 2652043176820346336}
   - component: {fileID: 8098522896829430587}
   m_Layer: 7
@@ -115,25 +114,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &737153775876118738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3230914605501729382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2b780ad4dad14640bfe0041085e475d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feetPos: {fileID: 0}
-  checkRadius: 1
-  jumpForce: 30
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  jumpTime: 0.15
 --- !u!114 &2652043176820346336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,13 +126,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b780ad4dad14640bfe0041085e475d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 15
+  velocity: {x: 0, y: 0}
+  distance: 0
+  maxXVelocity: 100
+  maxAcceleration: 10
+  acceleration: 10
   feetPos: {fileID: 0}
   checkRadius: 1
-  jumpForce: 15
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  jumpTime: 0.25
+  jumpStartTime: 0
 --- !u!50 &8098522896829430587
 Rigidbody2D:
   serializedVersion: 4

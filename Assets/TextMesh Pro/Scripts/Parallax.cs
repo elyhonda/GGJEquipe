@@ -11,16 +11,16 @@ public class Parallax : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<PlayerController>();
+        //player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        float realVelocity = player.velocity.x / depth;
+        //float realVelocity = player.velocity.x / depth;
 
 
-        mr.material.mainTextureOffset += new Vector2(realVelocity* Time.deltaTime, 0);
+        mr.material.mainTextureOffset += new Vector2(depth* Time.deltaTime, 0);
     }
 }
