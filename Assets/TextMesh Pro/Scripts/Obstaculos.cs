@@ -11,12 +11,13 @@ public class Obstaculos : MonoBehaviour
     public GameObject prefab3;
     public GameObject prefab4;
     private GameObject prefabSelecionado;
+    private PlayerController player;
     public float y;
     int blocoAleatorio;
     void Start()
     {
         StartCoroutine("SpawObstaculo");
-        
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         //velocidade = UnityEngine.Random.Range(1.5f, 5f);
         //Console.WriteLine(velocidade);
     }

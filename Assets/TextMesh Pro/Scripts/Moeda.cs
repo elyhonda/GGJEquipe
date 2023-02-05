@@ -21,11 +21,12 @@ public class Moeda : MonoBehaviour
 	    if(collision.gameObject.tag == "Player")
         {
             src.PlayOneShot(clip);
-            Invoke("gameOver",1f);
-            
+            DestroyObject();
         }
     }
-    void gameOver(){
+
+    void DestroyObject()
+    {
         Destroy(gameObject);
     }
 }
