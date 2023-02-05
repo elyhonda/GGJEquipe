@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public Vector2 velocity;
     public float distance;
+    public static int distanceSave;
     public float maxXVelocity = 100f;
     public float maxAcceleration = 10f;
     public float acceleration = 10f;
@@ -46,7 +47,8 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
         distance += velocity.x * Time.fixedDeltaTime;
-        
+        Debug.Log(distance);
+        distanceSave = (int)distance;
         if(isGrounded)
         {
 

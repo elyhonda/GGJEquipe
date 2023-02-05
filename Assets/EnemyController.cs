@@ -38,11 +38,12 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    /*private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Player")
+    private void OnTriggerEnter2D(Collider2D collision) 
+    {
+	    if(collision.gameObject.tag == "Player")
         {
-            
+           SceneManager.LoadScene("GameOver");
         }
-    }*/
+    }
 
 }
