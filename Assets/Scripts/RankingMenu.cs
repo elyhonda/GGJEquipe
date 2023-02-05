@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RankingMenu : MonoBehaviour
 {
-    public GameObject rankingPrefab;
+    public GameObject gridPosicao;
     public HighscoreTable highscoreTable;
     // Start is called before the first frame update
     void Start()
@@ -20,10 +20,10 @@ public class RankingMenu : MonoBehaviour
 
     public void DestroyGo()
     {
-        //foreach(GameObject go in rankingPrefab.ChildCount)
-        //{
-        //    Destroy(go);
-        //}
+        for (int i = 0; i < gridPosicao.transform.childCount; i++)
+        {
+            Destroy(gridPosicao.transform.GetChild(0).gameObject);
+        }
     }
 
     public void InstantPrefab()
