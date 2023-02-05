@@ -48,8 +48,6 @@ public class HighscoreTable : MonoBehaviour
         else
         {
             //AddHighscoreEntry(11500, "UTI");
-            string jsonString = PlayerPrefs.GetString("highscoreTable");
-            Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
             //UpdateList(highscores);
         }
@@ -65,6 +63,14 @@ public class HighscoreTable : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("highscoreTable"));
         */
         
+    }
+
+    public void ShowList()
+    {
+        string jsonString = PlayerPrefs.GetString("highscoreTable");
+        Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
+
+        UpdateList(highscores);
     }
     private void UpdateList(Highscores highscores)
     {
