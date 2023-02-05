@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -188,9 +188,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -715,9 +719,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1009,9 +1017,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1120,6 +1132,7 @@ Transform:
   - {fileID: 1598229607}
   - {fileID: 1241768058}
   - {fileID: 2143306297}
+  - {fileID: 883070953}
   - {fileID: 664160368}
   - {fileID: 2141801443}
   - {fileID: 708430962}
@@ -1137,7 +1150,6 @@ Transform:
   - {fileID: 1944862807}
   - {fileID: 1114958493}
   - {fileID: 2067140803}
-  - {fileID: 883070953}
   - {fileID: 917736066}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -1155,10 +1167,9 @@ GameObject:
   - component: {fileID: 517356015}
   - component: {fileID: 517356017}
   - component: {fileID: 517356018}
-  - component: {fileID: 517356020}
   m_Layer: 6
   m_Name: Ground (5)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1288,19 +1299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &517356020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517356013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1 &538618614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
@@ -1457,9 +1455,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1527,9 +1529,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1615,9 +1621,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1698,9 +1708,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1773,9 +1787,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1996,11 +2014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3230914605501729405, guid: 8cb9792c34f543948b1746ab7ed057b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.42
+      value: -5.85
       objectReference: {fileID: 0}
     - target: {fileID: 3230914605501729405, guid: 8cb9792c34f543948b1746ab7ed057b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.73
+      value: -3.37
       objectReference: {fileID: 0}
     - target: {fileID: 3230914605501729405, guid: 8cb9792c34f543948b1746ab7ed057b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2213,9 +2231,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2400,10 +2422,9 @@ GameObject:
   - component: {fileID: 883070954}
   - component: {fileID: 883070956}
   - component: {fileID: 883070957}
-  - component: {fileID: 883070959}
   m_Layer: 6
   m_Name: Ground (11)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2421,7 +2442,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 461262692}
-  m_RootOrder: 28
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &883070954
 BoxCollider2D:
@@ -2533,19 +2554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &883070959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883070952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1 &899786132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,10 +2701,9 @@ GameObject:
   - component: {fileID: 909069749}
   - component: {fileID: 909069751}
   - component: {fileID: 909069752}
-  - component: {fileID: 909069754}
   m_Layer: 6
   m_Name: Ground (7)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2826,19 +2833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &909069754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909069747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1001 &917736065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2922,6 +2916,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
+--- !u!1 &918445156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3230914605501729382, guid: 8cb9792c34f543948b1746ab7ed057b6, type: 3}
+  m_PrefabInstance: {fileID: 773602320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &918445162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918445156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1edff81e0ca0941a4a9f3ed0b51d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCollider: {fileID: 0}
 --- !u!1 &969770071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,7 +3229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalScale.x
@@ -3285,9 +3297,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -3495,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -3578,10 +3594,9 @@ GameObject:
   - component: {fileID: 1241768059}
   - component: {fileID: 1241768061}
   - component: {fileID: 1241768062}
-  - component: {fileID: 1241768064}
   m_Layer: 6
   m_Name: Ground (10)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3711,19 +3726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &1241768064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241768057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1 &1266878668
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,10 +3739,9 @@ GameObject:
   - component: {fileID: 1266878670}
   - component: {fileID: 1266878672}
   - component: {fileID: 1266878673}
-  - component: {fileID: 1266878675}
   m_Layer: 6
   m_Name: Ground (6)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3870,19 +3871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &1266878675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266878668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1001 &1267905423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3894,9 +3882,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -4453,10 +4445,9 @@ GameObject:
   - component: {fileID: 1598229608}
   - component: {fileID: 1598229610}
   - component: {fileID: 1598229611}
-  - component: {fileID: 1598229613}
   m_Layer: 6
   m_Name: Ground (9)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4586,19 +4577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &1598229613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598229606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1 &1615410624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,7 +5565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -5855,9 +5833,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -6030,7 +6012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalScale.x
@@ -6134,9 +6116,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoedaPrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -6219,10 +6205,9 @@ GameObject:
   - component: {fileID: 2143306298}
   - component: {fileID: 2143306300}
   - component: {fileID: 2143306301}
-  - component: {fileID: 2143306303}
   m_Layer: 6
   m_Name: Ground (8)
-  m_TagString: Untagged
+  m_TagString: OneWayPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6352,19 +6337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterVelocity: 60
---- !u!114 &2143306303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143306296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f24de46d33813844ea0834b67cf88c16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: 0
 --- !u!1001 &5553851520284803972
 PrefabInstance:
   m_ObjectHideFlags: 0

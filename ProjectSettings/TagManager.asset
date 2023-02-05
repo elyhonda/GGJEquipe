@@ -7,6 +7,7 @@ TagManager:
   - Jogador
   - Obstaculo
   - Obstacle
+  - OneWayPlatform
   layers:
   - Default
   - TransparentFX
