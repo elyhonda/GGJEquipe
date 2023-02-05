@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Obstaculo")
+        if(col.gameObject.tag == "Obstacle")
         {
             Destroy(col.gameObject);
             velocity.x *= 0.8f;
