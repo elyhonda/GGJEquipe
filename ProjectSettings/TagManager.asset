@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jogador
   - Obstaculo
+  - Obstacle
   layers:
   - Default
   - TransparentFX

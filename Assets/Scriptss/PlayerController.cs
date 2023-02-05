@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
- 
+    
+    EnemyController cenoura;
+
     public float jumpForce;
     public Vector2 velocity;
     public float distance;
@@ -28,16 +30,19 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        cenoura = GameObject.Find("Cenoura").GetComponent<EnemyController>();
     }
  
     // Update is called once per frame
     void Update()
     {
+        Vector2 pos = transform.position;
         Jump();
     }
  
     void FixedUpdate()
     {
+        Vector2 pos = transform.position;
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
         distance += velocity.x * Time.fixedDeltaTime;
@@ -53,8 +58,8 @@ public class PlayerController : MonoBehaviour
             velocity.x = maxXVelocity;
             }
         }
+
     }
- 
     void Jump()
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
@@ -84,7 +89,16 @@ public class PlayerController : MonoBehaviour
             isJumping = false;
         }
     }
-
+    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Obstaculo")
+        {
+            Destroy(col.gameObject);
+            velocity.x *= 0.8f;
+            cenoura.Move();  
+        }
+    }
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(feetPos.position, checkRadius);
