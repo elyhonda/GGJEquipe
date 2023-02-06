@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &7293018465975440400
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,9 +163,7 @@ Transform:
   - {fileID: 8824983501952676505}
   - {fileID: 8824983500590190846}
   - {fileID: 845590366402400049}
-  - {fileID: 845590365466873654}
   - {fileID: 845590366538590290}
-  - {fileID: 845590365771536734}
   - {fileID: 845590366327702832}
   - {fileID: 845590367269205279}
   - {fileID: 845590366620111776}
@@ -281,7 +278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!61 &4568228324558287518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -424,7 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983500869857057
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501042351078
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501439670004
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +765,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501557054606
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501777245669
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501901633747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,7 +1110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1 &8824983501952676506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!251 &5102350378652519838
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -1273,13 +1261,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (11)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1353,96 +1345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
---- !u!1001 &8824983500277070916
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 7293018465975440403}
-    m_Modifications:
-    - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_Name
-      value: InhamePrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 41.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7858060317069075665, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
---- !u!4 &845590365466873654 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_PrefabInstance: {fileID: 8824983500277070916}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3258683338708965243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_PrefabInstance: {fileID: 8824983500277070916}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6081082271923647233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3258683338708965243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  counterVelocity: 40
 --- !u!1001 &8824983500354049765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1450,13 +1352,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (10)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1530,7 +1436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983500655097561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1538,13 +1443,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1618,96 +1527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
---- !u!1001 &8824983500715846188
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 7293018465975440403}
-    m_Modifications:
-    - target: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_Name
-      value: InhamePrefab (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7858060317069075665, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
---- !u!4 &845590365771536734 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8197818275251876722, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_PrefabInstance: {fileID: 8824983500715846188}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3258683338207002899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6287456671099382591, guid: 874563ead0f16464a84abfce44148ce4, type: 3}
-  m_PrefabInstance: {fileID: 8824983500715846188}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1835074483325645201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3258683338207002899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  counterVelocity: 40
 --- !u!1001 &8824983500808039029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,13 +1534,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (7)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1795,7 +1618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501011263698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1803,13 +1625,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1883,7 +1709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501089456824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1891,13 +1716,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -1971,7 +1800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501230029891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1979,6 +1807,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab
@@ -2059,7 +1891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501303674434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2069,7 +1900,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 853922804140937458, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: counterVelocity
-      value: 60
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476306772855101907, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659558231107531331, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135595595749964080, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_Name
@@ -2081,7 +1924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalScale.x
@@ -2151,7 +1994,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 853922804140937458, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: counterVelocity
-      value: 60
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476306772855101907, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659558231107531331, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135595595749964080, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_Name
@@ -2163,7 +2018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: 27abc41702e8e58408a50e3a61a06ea5, type: 3}
       propertyPath: m_LocalScale.x
@@ -2231,13 +2086,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2311,7 +2170,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501618219472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2319,13 +2177,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2399,7 +2261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501691766381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2407,13 +2268,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2487,7 +2352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501825430403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2495,13 +2359,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (8)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2575,7 +2443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60
 --- !u!1001 &8824983501966787257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2583,13 +2450,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7293018465975440403}
     m_Modifications:
+    - target: {fileID: 3476306772855101907, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 99
+      objectReference: {fileID: 0}
     - target: {fileID: 6287456671099382591, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_Name
       value: MoedaPrefab (9)
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8197818275251876722, guid: c56b7088f8d0a1a499f5cd83b02c9a70, type: 3}
       propertyPath: m_LocalScale.x
@@ -2663,4 +2534,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 655d29e27753554499abc5d92d3e0b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterVelocity: 60

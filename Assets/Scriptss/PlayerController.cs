@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour
         if(col.gameObject.tag == "Obstacle")
         {
             Destroy(col.gameObject);
-            velocity.x *= 0.8f;
+            velocity.x *= 0.5f;
             cenoura.Move();  
         }
     }

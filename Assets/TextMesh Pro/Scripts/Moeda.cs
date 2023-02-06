@@ -7,9 +7,12 @@ public class Moeda : MonoBehaviour
     public GameObject gameObject;
     public AudioSource src;
     public AudioClip clip;
+    PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
+        
         int moeda = UnityEngine.Random.Range(0,2);
         if (moeda == 0 ){
             Destroy(gameObject);
@@ -21,11 +24,12 @@ public class Moeda : MonoBehaviour
 	    if(collision.gameObject.tag == "Player")
         {
             src.PlayOneShot(clip);
-            DestroyObject();
+            player.distance += 100;
+            Invoke("somMoeda",0.3f);
         }
     }
 
-    void DestroyObject()
+    void somMoeda()
     {
         Destroy(gameObject);
     }

@@ -18,6 +18,6 @@ public class DestroyObject : MonoBehaviour
 
     public void DestroyGO()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 }

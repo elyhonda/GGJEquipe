@@ -5,7 +5,7 @@ using System;
 public class ObstaculoMovimento1 : MonoBehaviour
 {
     float x,y;
-    float velocidadeObjeto = -0.07f;
+    float velocidadeObjeto = -0.01f;
     int inimigo;
     // Start is called before the first frame update
     void Start()
