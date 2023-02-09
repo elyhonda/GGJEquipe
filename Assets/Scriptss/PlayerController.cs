@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
  
     public AudioSource src;
     public AudioClip clip;
+
+    public Animator anim;
  
     // Start is called before the first frame update
     void Start()
@@ -48,7 +50,7 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
         distance += velocity.x * Time.fixedDeltaTime;
-        Debug.Log(distance);
+        //Debug.Log(distance);
         distanceSave = (int)distance;
         if(isGrounded)
         {
@@ -73,6 +75,9 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
             jumpTime = jumpStartTime;
             rb.velocity = Vector2.up * jumpForce;
+
+            anim.SetBool("isJumping", true);
+            anim.Play("jump");
         }
  
         if (Input.GetKey(KeyCode.W) && isJumping == true)
@@ -85,12 +90,14 @@ public class PlayerController : MonoBehaviour
             else
             {
                 isJumping = false;
+                anim.SetBool("isJumping", false);
             }
         }
  
         if (Input.GetKeyUp(KeyCode.W))
         {
             isJumping = false;
+            anim.SetBool("isJumping", false);
         }
     }
 
@@ -103,6 +110,14 @@ public class PlayerController : MonoBehaviour
             velocity.x *= 0.5f;
             cenoura.Move();  
         }
+        
+        if (col.gameObject.tag == "BatataDoce")
+        {
+            Destroy(col.gameObject);
+            velocity.x *= 0.5f;
+            cenoura.Move();
+        }
+
     }
     void OnDrawGizmos()
     {

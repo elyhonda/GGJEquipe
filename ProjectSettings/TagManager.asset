@@ -8,6 +8,7 @@ TagManager:
   - Obstaculo
   - Obstacle
   - OneWayPlatform
+  - BatataDoce
   layers:
   - Default
   - TransparentFX
